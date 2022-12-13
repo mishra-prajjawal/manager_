@@ -1,0 +1,54 @@
+{
+    "all": [
+        {
+            "userid": "1",
+            "name": "Prajjawal Mishra",
+            "dob": "08/12/2004",
+            "gender": "M",
+            "phone": "9717****",
+            "email": "prajj@mail.studen.live",
+            "address": "New Delhi",
+            "country": "India",
+            "salary": "1"
+        },
+        {
+            "userid": "2",
+            "name": "Shaman Singh Multani",
+            "dob": "11/11/2011",
+            "gender": "M",
+            "phone": "9783****",
+            "email": "shaman@studen.live",
+            "address": "New Delhi",
+            "country": "India",
+            "salary": "12000"
+        },
+        {
+            "userid": "3",
+            "name": "Vatsal Soni",
+            "dob": "12/12/2012",
+            "gender": "M",
+            "phone": "9812****",
+            "email": "vatsal@studen.live",
+            "address": "New Delhi",
+            "country": "India",
+            "salary": "13000"
+        },
+        {
+            "userid": "4",
+            "name": "Shivang Sharma",
+            "dob": "09/09/2009",
+            "gender": "M",
+            "phone": "9817****",
+            "email": "shivang@studen.live",
+            "address": "New Delhi",
+            "country": "India",
+            "salary": "9000"
+        }
+    ],
+    "empid": [
+        "1",
+        "2",
+        "3",
+        "4"
+    ]
+}

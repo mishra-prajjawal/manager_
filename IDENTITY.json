@@ -1,0 +1,10 @@
+{
+    "type": "(dictionary,string,list)",
+    "name": "pydb-Basic",
+    "author": "Prajjawal Mishra",
+    "version": "0.0.1.0-beta",
+    "uri": "github.com/mishra-prajjawal/pydb",
+    "description": "A simple JSON based single file database for Python 3.6+",
+    "license": "APACHE 2.0",
+    "mail": "prajj+githubpydb@mail.studen.live"
+}
