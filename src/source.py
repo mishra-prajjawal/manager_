@@ -22,14 +22,21 @@ class worker:
                 pass
         return i
     def read_user_alldata(self):
-        print("Reading all the data")
         with open(self.path,"r") as f:
             data = json.load(f)
-            list = [] 
+            dict = {"userid":[],"name":[],"dob":[],"gender":[],"phone":[],"email":[],"address":[],"country":[],"salary":[]} 
             for i in data["all"]:
-                list.append(i)
-            print(list)
-            return list
+                dict["userid"].append(i["userid"])
+                dict["name"].append(i["name"])
+                dict["dob"].append(i["dob"])
+                dict["gender"].append(i["gender"])
+                dict["phone"].append(i["phone"])
+                dict["email"].append(i["email"])
+                dict["address"].append(i["address"])
+                dict["country"].append(i["country"])
+                dict["salary"].append(i["salary"])
+            return dict
+
     def read_user(self,userid):
         with open(self.path,"r") as f:
             data = json.load(f)
