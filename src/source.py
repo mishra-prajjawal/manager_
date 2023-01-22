@@ -10,14 +10,14 @@ class worker:
         a = {}
         for number,i in enumerate(self.ulist_def):
             a[self.ulist[number]] = input("Enter the "+i+" : ")
-        with open(self.path,"r+") as f:
+        with open(self.path,"r") as f:
             i = 0 
             try:
                 data = json.load(f)
                 data["all"].append(a)
                 data["empid"].append(a["userid"])
-                f.seek(0)
-                json.dump(data,f,indent=4)
+                with open(self.path,"w") as k:
+                    json.dump(data,k,indent=4)
             except json.decoder.JSONDecodeError:
                 pass
         return i
@@ -44,7 +44,7 @@ class worker:
                 if int(i["userid"]) == userid:
                     return i
     def update_user(self,userid):
-        with open(self.path,"r+") as f:
+        with open(self.path,"r") as f:
             data = json.load(f)
             for i in data["all"]:
                 if int(i["userid"]) == userid:
@@ -54,8 +54,8 @@ class worker:
                         i[self.ulist[number]] = input("Enter the "+j+"["+i[self.ulist[number]]+"] : ")
                         if i == "":
                             i = i[self.ulist[number]]
-                    f.seek(0)
-                    json.dump(data,f,indent=4)
+                    with open(self.path,"w") as k:
+                        json.dump(data,k,indent=4)
                     return i
     def delete_user(self,userid):
         with open(self.path,"r") as f:

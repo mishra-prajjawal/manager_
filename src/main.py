@@ -1,6 +1,4 @@
-#creating an employee management system
 from source import *
-#creating a menu driven program
 """
 /*
  * Manage+ BY PRAJJAWAL MISHRA,
